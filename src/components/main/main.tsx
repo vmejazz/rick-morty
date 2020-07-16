@@ -14,12 +14,12 @@ type CharacherInfoType = {
 const Main = () => {
   const EMPTY_RICK = {
     id: -2,
-    name: "",
+    name: "RICK",
     image: "",
   };
   const EMPTY_MORTY = {
     id: -3,
-    name: "",
+    name: "MORTY",
     image: "",
   };
 
@@ -36,14 +36,15 @@ const Main = () => {
     if (searchValue.length > 2) {
       setSearchText(searchValue);
     }
+    setPageShow(1);
   };
 
   //* Устанавливаем карточки в Party Team
   const choiceCharacter: Function = (characherInfo: CharacherInfoType) => {
-    if (characherInfo.name.toUpperCase().includes(`RICK`)) {
+    if (characherInfo.name.toUpperCase().includes("RICK")) {
       setRickCard(characherInfo);
     }
-    if (characherInfo.name.toUpperCase().includes(`MORTY`)) {
+    if (characherInfo.name.toUpperCase().includes("MORTY")) {
       setMortyCard(characherInfo);
     }
   };

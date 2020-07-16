@@ -8,16 +8,17 @@ export const CardStyled = styled.li`
   margin-bottom: 30px;
   margin-left: 30px;
   overflow: hidden;
+  background-color: gray;
 `;
 
 export const CardImageStyled = styled.img`
+  position: relative;
   display: block;
   width: 100%;
   height: 100%;
 
   background-position: center;
   background-size: auto 100%;
-  background-color: gray;
 `;
 
 export const CardButtonStyled = styled.button`
@@ -63,4 +64,19 @@ export const CardButtonStyled = styled.button`
   &:after {
     transform: rotate(-45deg);
   }
+`;
+
+export const CardTitleStyled = styled.h3`
+  position: absolute;
+  bottom: 25px;
+  margin: 0 auto;
+  width: 100%;
+  text-align: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 28px;
+
+  color: #ffffff;
 `;

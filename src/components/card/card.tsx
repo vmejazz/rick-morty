@@ -1,5 +1,10 @@
 import * as React from "react";
-import { CardStyled, CardImageStyled, CardButtonStyled } from "./style";
+import {
+  CardStyled,
+  CardImageStyled,
+  CardButtonStyled,
+  CardTitleStyled,
+} from "./style";
 
 type characterProps = {
   id?: number;
@@ -20,7 +25,10 @@ const Card = (props: CardProps) => {
 
   return (
     <CardStyled onClick={() => choiceCharacter(character)}>
-      <CardImageStyled src={imgUrl} alt={name}></CardImageStyled>
+      <CardTitleStyled>{name}</CardTitleStyled>
+      {imgUrl ? (
+        <CardImageStyled src={imgUrl} alt={name}></CardImageStyled>
+      ) : null}
       {showCloseButton ? (
         <CardButtonStyled
           onClick={(evt) => {

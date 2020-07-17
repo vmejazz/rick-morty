@@ -20,10 +20,7 @@ Object {
             type="text"
           />
         </div>
-        <listofcharacters
-          pagequery="1"
-          searchtext=""
-        />
+        <ul />
         <h2
           class="sc-AxhUy ESYqO"
         >
@@ -33,19 +30,19 @@ Object {
           class="sc-AxhCb gWkrnZ"
         >
           <li
-            class="sc-AxgMl dJzCRE"
+            class="sc-AxgMl bKDKdu"
           >
             <h3
-              class="sc-AxmLO ewHHhy"
+              class="sc-AxmLO fXFffk"
             >
               RICK
             </h3>
           </li>
           <li
-            class="sc-AxgMl dJzCRE"
+            class="sc-AxgMl bKDKdu"
           >
             <h3
-              class="sc-AxmLO ewHHhy"
+              class="sc-AxmLO fXFffk"
             >
               MORTY
             </h3>
@@ -70,10 +67,7 @@ Object {
           type="text"
         />
       </div>
-      <listofcharacters
-        pagequery="1"
-        searchtext=""
-      />
+      <ul />
       <h2
         class="sc-AxhUy ESYqO"
       >
@@ -83,19 +77,19 @@ Object {
         class="sc-AxhCb gWkrnZ"
       >
         <li
-          class="sc-AxgMl dJzCRE"
+          class="sc-AxgMl bKDKdu"
         >
           <h3
-            class="sc-AxmLO ewHHhy"
+            class="sc-AxmLO fXFffk"
           >
             RICK
           </h3>
         </li>
         <li
-          class="sc-AxgMl dJzCRE"
+          class="sc-AxgMl bKDKdu"
         >
           <h3
-            class="sc-AxmLO ewHHhy"
+            class="sc-AxmLO fXFffk"
           >
             MORTY
           </h3>

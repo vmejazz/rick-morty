@@ -9,8 +9,8 @@ import PageButtons from "../page-buttons/page-buttons";
 
 type ListProps = {
   searchText: string;
-  changePageShow: Function;
   pageQuery: number;
+  changePageShow: Function;
   choiceCharacter: Function;
 };
 
@@ -63,8 +63,7 @@ const ListOfCharacters = (props: ListProps) => {
   if (error) return <EmptyList />;
   if (loading) return <LoadingPage />;
 
-  let characters = data.characters.results;
-  let info = data.characters.info;
+  let { results: characters, info } = data.characters;
 
   return (
     <React.Fragment>
@@ -73,7 +72,6 @@ const ListOfCharacters = (props: ListProps) => {
           if (listDeletedCard.some((card: any) => card.id === item.id)) {
             return null;
           }
-
           return (
             <Card
               character={item}
